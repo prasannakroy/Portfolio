@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Playfair Display', serif;
+  /*background: #BFBFBF;*/
+}
+
+/*Body*/
+
+.bg-img {
+  background: url('../images/DM.jpg') no-repeat;
+  filter: blur(4px);
+  -webkit-filter: blur(4px);
+  width: 100%;
+  height: 500px;
+  color: #FFFFFF;
+  text-align: center;
+  text-decoration-style:  
+}
+
+#fast_contacts {
+  background-color: rgba(0, 0, 0, 0.4); 
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  top: 1%;
+  left: 94%;
+  transform: translate(-94%, -1%);
+  border: 2px solid #FFFFFF;
+  border-radius: 10px;
+  z-index: 2;
+  padding: 10px;
+  text-align: center;
+}
+
+.btn {
+  color: #FFFFFF;
+}
+
+.btn:hover {
+  color: #025AFE;
+}
+
+#landing h1 {
+  background-color: rgba(0, 0, 0, 0.4); 
+  font-size: 3em;
+  color: white;
+  font-weight: bold;
+  border: 3px solid #F1F1F1;
+  border-radius: 30px;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -45%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+
+
+.profile-bg {
+  background: url('../images/wall.jpg') no-repeat;
+  filter: blur(4px);
+  -webkit-filter: blur(4px);
+  width: 100%;
+  height: 700px;
+  color: #000000;
+  text-align: center;
+  text-decoration-style:  
+}
+
+#tagline2 {
+  background-color: rgba(0, 0, 0, 0.6); 
+  font-size: 2.8em;
+  color: #FFFFFF;
+  font-weight: bold;
+  border: 3px solid #F1F1F1;
+  border-radius: 30px;
+  position: absolute;
+  bottom: -100%;
+  transform: translate(10%, -5%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+
+/*Media*/
+
+@media (min-width: 400px) and (max-width: 991px) {
+  #landing h1 {
+    font-size: 2em;
+    top: 40%;
+  }
+
+  #fast_contacts {
+    width : 200px ;
+  }
+
+  #tagline2 {
+    position: absolute;
+    bottom: -100%;
+    transform: translate(10%, -150%);
+    font-size: 2em;
+  }
+}
+
+@media (max-width: 399px) {
+  #landing h1 {
+    font-size: 2em;
+    top: 40%;
+  }
+
+  #fast_contacts {
+    width : 200px ;
+  }
+
+  #tagline2 {
+    transform: translate(10%, -70%);
+    font-size: 2em;
+  }
+}
+
+/*@media (max-width: 330px) {
+  h1 {
+    font-size: 2em;
+  }
+*/}
