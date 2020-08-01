@@ -6,12 +6,32 @@
 
 /*Body*/
 
+#landing {
+
+}
+
+.intro {
+  border-radius: 7px;
+  background-color: grey;
+  text-decoration: underline;
+  text-decoration-style: double;
+  color: white;
+  text-align: center;
+  height: 200px;
+}
+
+.intro h1{
+  font-size: 2.5em; 
+}
+
 .bg-img {
+  position: relative;
   background: url('../images/DM.jpg') no-repeat;
   filter: blur(4px);
   -webkit-filter: blur(4px);
+  margin-top: 20px;
   width: 100%;
-  height: 500px;
+  height: 600px;
   color: #FFFFFF;
   text-align: center;
   text-decoration-style:  
@@ -40,89 +60,114 @@
   color: #025AFE;
 }
 
-#landing h1 {
-  background-color: rgba(0, 0, 0, 0.4); 
-  font-size: 3em;
+.tagline {
+  background-color: rgba(0, 0, 0, 0.8); 
   color: white;
   font-weight: bold;
-  border: 3px solid #F1F1F1;
+  border: 10px solid #343434;
+  border-style: outset;
   border-radius: 30px;
   position: absolute;
-  top: 30%;
+  top: 60%;
   left: 50%;
-  transform: translate(-50%, -45%);
+  transform: translate(-50%, -60%);
   z-index: 2;
   width: 80%;
   padding: 20px;
   text-align: center;
 }
 
-
-.profile-bg {
-  background: url('../images/wall.jpg') no-repeat;
-  filter: blur(4px);
-  -webkit-filter: blur(4px);
-  width: 100%;
-  height: 700px;
-  color: #000000;
-  text-align: center;
-  text-decoration-style:  
+#profile {
+  background: #000000;
+  background: -webkit-linear-gradient(to right, #444343, #000000);
+  background: linear-gradient(to right, #444343, #000000);
 }
 
-#tagline2 {
-  background-color: rgba(0, 0, 0, 0.6); 
-  font-size: 2.8em;
+#profile *{
+  background: #444343;
+  background: -webkit-linear-gradient(to right, #626262, #444343);
+  background: linear-gradient(to right, #626262, #444343);
+}
+
+#profile h1 {
+  text-align: center;
+  color: white;
+  text-decoration: underline overline;
+  text-shadow: 2px 2px grey;
+  text-decoration-color: #373333; 
+}
+
+#profile-1 {
   color: #FFFFFF;
   font-weight: bold;
-  border: 3px solid #F1F1F1;
+  border: 10px solid silver;
+  border-style: outset;
   border-radius: 30px;
-  position: absolute;
-  bottom: -100%;
-  transform: translate(10%, -5%);
   z-index: 2;
-  width: 80%;
-  padding: 20px;
   text-align: center;
+}
+
+#author {
+  text-decoration: underline;
+}
+
+#ds {
+  font-size: 2em;
+  color: #FFFFFF;
+  font-weight: bold;
+  border: 10px solid silver;
+  border-style: outset;
+  border-radius: 30px;
+  z-index: 2;
+  text-align: center; 
+  margin-bottom: 20px;
+}
+
+#ds h1 {
+  text-decoration: underline;
+}
+
+#ds img {
+  height: 200px;
+  width: 200px;
+}
+
+.a {
+  font-size: 0.8em;
 }
 
 /*Media*/
 
 @media (min-width: 400px) and (max-width: 991px) {
-  #landing h1 {
-    font-size: 2em;
-    top: 40%;
+  .tagline {
+    font-size: 1.8em;
   }
 
   #fast_contacts {
     width : 200px ;
   }
 
-  #tagline2 {
-    position: absolute;
-    bottom: -100%;
-    transform: translate(10%, -150%);
-    font-size: 2em;
+  #profile-1 h2{
+    font-size: 1.5em;
+  }
+  #ds h1 {
+    font-size: 1em;
   }
 }
 
 @media (max-width: 399px) {
-  #landing h1 {
-    font-size: 2em;
-    top: 40%;
+  .tagline h1 {
+    font-size: 1.8em;
   }
 
   #fast_contacts {
-    width : 200px ;
+    width : 200px;
   }
 
-  #tagline2 {
-    transform: translate(10%, -70%);
-    font-size: 2em;
+  #profile-1 h2{
+    font-size: 1.5em;
+  }
+  #ds h1 {
+    font-size: 0.8em;
   }
 }
-
-/*@media (max-width: 330px) {
-  h1 {
-    font-size: 2em;
-  }
-*/}
